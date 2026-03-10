@@ -39,8 +39,8 @@ public class Board {
 
                     if      (cell == SHIP && !hidden) symbol = GREEN  + "[0]" + RESET;
                     else if (cell == HIT)             symbol = YELLOW    + "[#]" + RESET;
-                    else if (cell == SUNK)            symbol = RED  + "[#]" + RESET;
-                    else if (cell == MISS)            symbol = BLUE + "[*]" + RESET;
+                    else if (cell == SUNK)            symbol = RED  + "[*]" + RESET;
+                    else if (cell == MISS)            symbol = BLUE + "[x]" + RESET;
                     else                              symbol = "[ ]";
 
                     System.out.print(symbol + "");
@@ -70,8 +70,8 @@ public class Board {
 
                     if (cell == SHIP && !hidden) symbol = GREEN + "[0]" + RESET;
                     else if (cell == HIT) symbol = YELLOW + "[#]" + RESET;
-                    else if (cell == SUNK) symbol = RED + "[#]" + RESET;
-                    else if (cell == MISS) symbol = BLUE + "[*]" + RESET;
+                    else if (cell == SUNK) symbol = RED + "[*]" + RESET;
+                    else if (cell == MISS) symbol = BLUE + "[x]" + RESET;
                     else symbol = "[ ]";
 
                     sb.append(symbol + "");
@@ -118,6 +118,7 @@ public class Board {
     }
 
 }
+
 
 
 
